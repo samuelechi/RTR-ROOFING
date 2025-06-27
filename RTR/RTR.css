@@ -6,7 +6,7 @@
 }
 /* Global styles */
 body {
-    background-color: #470f6465; /* Light grey background */
+    background-color: rgba(138, 182, 223, 0.884); /* Light grey background */
     color: #333;
     line-height: 1.6;
     font-size: 16px;
@@ -30,7 +30,6 @@ body {
   --accent-yellow: #ffc107;
 }
 
-
 header {
     color: var(--white-colour);
     padding: 20px;
@@ -41,6 +40,7 @@ header {
     transition: background-color 0.3s ease;
     
 }
+
 img{
     max-width: 100%;
     height: auto;
@@ -71,17 +71,21 @@ img{
   width: 100%;
   position: sticky;  /* stays at top while scrolling */
   top: 0;
-  z-index: var(--z-fixed, 1000);
+  z-index: 1000;
+ 
+ 
  
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .navbar {
-  max-width: 1200px;
+  max-width: 100vw;
 
   display: flex;
-  align-items: center;
+ align-items: center;
+ 
   justify-content: space-between;
+
 }
 
 
@@ -94,8 +98,11 @@ img{
 /* --- desktop menu --- */
 .menu {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.5rem;
   list-style: none;
+ 
+margin-right: 5%;
+ 
 }
 .menu li {
   margin-left: var(--margin-left);
@@ -103,11 +110,12 @@ img{
 
 .menu li a {
   position: relative;
-  color: var(--text-white);
+  color: var(--main-colour);
   font-weight: 900;
   font-size: large;
   text-decoration: none;
   transition: color 0.3s;
+  
 }
 
 /* underline hover effect */
@@ -169,6 +177,55 @@ img{
         font-weight: 900;
        
     }
+}
+
+.hero-con{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: var(--margin-left);
+    margin-bottom: 2.5rem;
+    align-items: center;
+  
+}
+.hero-con h2{
+    color: var(--dark-colour);
+    text-decoration: underline var(--main-colour);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-size: 2.3rem;
+    
+}
+.hero-con p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: normal;
+    font-size: 1.7rem;
+    line-height: 1.8;
+    word-spacing: .2rem;
+    align-items: center;
+    text-align: left;
+   
+}
+.hero-con span{
+    color: var(--dark-colour);
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+   
+}
+.hero-con img{
+    max-width: 950px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 2px solid #007bff ;
+
 }
 
 /* Responsive Design */
@@ -385,7 +442,6 @@ img{
 
 
 
-/* Contact Section */
 .contact-content {
     position: relative;
     padding: 40px 20px;
@@ -395,6 +451,8 @@ img{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
     width: 100%;
+   margin-left: 20%;
+  
 }
 
 /* Contact Heading */
@@ -525,12 +583,6 @@ img{
 
 
 
-
-
-
-
-
-
 /* Reset and font styling (optional) */
 * {
   margin: 0;
@@ -552,7 +604,7 @@ main {
   justify-content: center;
   text-align: center;
 
-  background-color: #f4f4f4;
+  
 
 }
 
@@ -564,25 +616,24 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.hero-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 8px;
-}
+
 
 /* Text styles */
 #home h1 {
   font-size: 2.5rem;
-  color: #222;
+  color: var(--white-colour);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  padding-bottom: 15px;
   margin-bottom: 1rem;
 }
 
 #home p {
-  font-size: 1.2rem;
-  color: #555;
-  max-width: 600px;
+  font-size: 1.5rem;
+  color: var(--white-colour);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  max-width: 70%;
 }
 
 /* Responsive adjustments */
@@ -597,6 +648,34 @@ main {
 }
 
 
+
+
+#hero-canvas{
+    width: 100vw;
+}
+
+/* Scroll-up button styles */
+.scroll-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0; /* Moved to the very right end */
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-up.visible {
+  display: block;
+}
+
+.scroll-up:hover {
+  transform: scale(1.1);
+}
 
 
 
