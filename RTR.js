@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
       // Style and draw greeting text
-      ctx.font = "700 40px Montserrat, Arial, sans-serif"; // Large, bold font
+      ctx.font = "1000 50px Montserrat, Arial, sans-serif"; // Large, bold font
       ctx.fillStyle = "#ffffff"; // White text
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.shadowColor = "rgba(255, 251, 251, 0.53)"; // Shadow for depth
+      ctx.shadowColor = "rgba(138, 182, 223, 0.884)"; // Shadow for depth
       ctx.shadowBlur = 5;
       ctx.shadowOffsetX = 2;
       ctx.shadowOffsetY = 2;
