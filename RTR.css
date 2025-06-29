@@ -299,7 +299,16 @@ margin-right: 5%;
         .service-img:hover .service-text {
             background: rgba(0, 0, 0, 0.8);
         }
-
+             @media (max-width: 375px) {
+             #services{
+                   display: grid;
+                    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+                    gap: 2rem;
+                    overflow-x: hidden;
+                    width: 100%;
+                    margin: 0 auto;
+            }
+        }
         /* Mobile styling */
         @media (max-width: 767px) {
             #services {
