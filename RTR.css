@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +16,8 @@ body {
 }
 /* Header styles */
 :root{
+    --background-colour: rgba(138, 182, 223, 0.884);
+    --second-bg-colour: rgba(230, 23, 8, 0.253);
     --main-colour: #301b74; /* Main color for the site */
     --second-colour: #801515; /* Secondary color for the site */
     --border-link-colour: #f44009; /* Border color for links */
@@ -92,7 +94,7 @@ img{
 
 
 .logo img {
-  height: 90px;
+  height: 120px;
   width: auto;
  
 }
@@ -163,7 +165,7 @@ margin-right: 5%;
     }
 
     .logo img {
-        height: 40px;
+        height: 60px;
     }
 
     .menu {
@@ -341,6 +343,10 @@ margin-right: 5%;
             }
             #services h2{
                 font-size: 1.8rem;
+                color: var(--dark-colour);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        
             }
 
             .service-img img {
@@ -387,7 +393,7 @@ margin-right: 5%;
             font-weight: 700;
             color: var(--dark-colour);
             margin: 0 auto 50px; /* Increased bottom margin */
-            border-bottom: 3px solid var(--main-colour);
+            border-bottom: 3px solid var(--dark-colour);
             max-width: 1200px;
             width: 100%;
             display: block; /* Ensure it’s standalone */
@@ -602,6 +608,10 @@ margin-right: 5%;
     }
     .contact-title h2{
         font-size: 1.7rem;
+        color: var(--dark-colour);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        text-decoration: none;
     }
 
     .contact-content h3 i {
@@ -735,17 +745,40 @@ main {
     h2{
         font-size: .98rem;
     }
+    #home em{
+        font-size: 1.2rem;
+        color: var(--dark-colour);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+    }
+ 
+    .hero-con{
+        margin: 0 auto;
+        margin-top: 2rem;
+        background-color: rgba(78, 12, 7, 0.253);
+        
+    }
     .hero-con p{
         font-size: .89rem;
-        width: 85%;
-      
+        width: 100%;
+    }
+    .hero-con .hero-con-p {
+        margin-top: 2rem;
+    }
+    .hero-con .hero-p {
+        padding-bottom: 2rem;
     }
     .hero-con h2{
-        font-size: .98rem;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: var(--dark-colour);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
     }
     .hero-con span{
         font-size: .97rem;
-        font-weight:600;
+        font-weight:900;
+        color: var(--background-colour);
     }
     .quick-links{
      display: grid;
