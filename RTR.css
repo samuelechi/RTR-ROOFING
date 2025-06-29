@@ -589,8 +589,11 @@ margin-right: 5%;
 /* Responsive Design */
 @media (max-width: 767px) {
     .contact-content {
-        margin: 2rem 10px;
+        margin: 0;
+        
         padding: 20px 15px;
+        width: 100%;
+        align-items: center;
     
     }
    
