@@ -303,18 +303,27 @@ margin-right: 5%;
         /* Mobile styling */
         @media (max-width: 767px) {
             #services {
-                grid-template-columns: 1fr;
-                padding: 10px;
+                   display: grid;
+                    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+                    gap: 4rem;
+                    padding: 5rem 10%;
+                    background-color: var(--white-color);
+                    max-width: 100%;
+                    margin: 0 auto;
+            }
+            #services h2{
+                font-size: 1.8rem;
             }
             .service-img img {
                 height: 200px;
             }
             .service-text h3 {
-                font-size: 1.2rem;
+                font-size: .97rem;
             }
             .service-text p {
-                font-size: 0.9rem;
+                font-size: 0.89rem;
                 max-height: 120px;
+                
             }
             /* Background workaround for iPhone Safari */
             #services::before {
@@ -331,6 +340,7 @@ margin-right: 5%;
                 z-index: -1;
                 opacity: 0.5;
             }
+           
         }
 
         /* Accessibility */
@@ -553,15 +563,18 @@ margin-right: 5%;
     }
 
     .contact-content h3 {
-        font-size: 1.6rem;
+        font-size: .98rem;
+    }
+    .contact-title h2{
+        font-size: 1.7rem;
     }
 
     .contact-content h3 i {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     .contact-text-div p {
-        font-size: 1rem;
+        font-size: .89rem;
         padding: 0 10px;
     }
 
@@ -639,7 +652,7 @@ main {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #home h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #home p {
@@ -652,6 +665,7 @@ main {
 
 #hero-canvas{
     width: 100vw;
+ 
 }
 
 /* Scroll-up button styles */
@@ -675,4 +689,45 @@ main {
 
 .scroll-up:hover {
   transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px){
+    p{
+        font-size: .89rem;
+    }
+    h2{
+        font-size: .98rem;
+    }
+    .hero-con p{
+        font-size: .89rem;
+        width: 85%;
+      
+    }
+    .hero-con h2{
+        font-size: .98rem;
+    }
+    .hero-con span{
+        font-size: .97rem;
+        font-weight:600;
+    }
+    .quick-links{
+     display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: .9rem;
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 ;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+        
+    }
+    .quick-links p{
+        font-size: .89rem;
+    }
+    .quick-links h3{
+        font-size: 1rem;
+    }
 }
