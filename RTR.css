@@ -252,7 +252,6 @@ margin-right: 5%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             width: 80%;
-            margin-left: var(--margin-left);
             margin-bottom: 2rem;
            
         }
