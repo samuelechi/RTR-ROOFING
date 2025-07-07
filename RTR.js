@@ -1,20 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Set greeting based on time
-  const date = new Date();
-  const hour = date.getHours();
-  let greetings;
-
-  if (hour > 18) {
-    greetings = "Good Evening!";
-  } else if (hour > 12) {
-    greetings = "Good Afternoon!";
-  } else if (hour > 0){
-    greetings = "Good Morning!";
-  }
-  else{
-    greetings = 'WELCOME!';
-  }
-
+  
   // Get canvas and context
   const canvas = document.getElementById("hero-canvas");
   const ctx = canvas ? canvas.getContext("2d") : null;
@@ -26,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Load the hero image
     const img = new Image();
-    img.src = "paddy-pohlod-EhIUYktUunU-unsplash.jpg"; // Your hero image URL
+    img.src = "ChatGPT Image Jul 7, 2025, 01_29_30 PM.png"; // Your hero image URL
     img.crossOrigin = "Anonymous"; // For CORS if image is external
 
     img.onload = () => {
